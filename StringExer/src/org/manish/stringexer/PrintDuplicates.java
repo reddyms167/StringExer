@@ -13,14 +13,11 @@ public class PrintDuplicates {
 		String word = input.nextLine();
 		
 		FindDuplicates(word);
-
-		// Process to find the duplicates in string
-
-		
-		
-
 	}
 	
+	
+	
+	// Process to find the duplicates in string
 	public static void FindDuplicates(String word){
 		char[] characters = word.toCharArray();
 
