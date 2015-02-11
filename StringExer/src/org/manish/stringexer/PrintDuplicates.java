@@ -11,9 +11,17 @@ public class PrintDuplicates {
 		System.out.println("Enter the String: ");
 		Scanner input = new Scanner(System.in);
 		String word = input.nextLine();
+		
+		FindDuplicates(word);
 
 		// Process to find the duplicates in string
 
+		
+		
+
+	}
+	
+	public static void FindDuplicates(String word){
 		char[] characters = word.toCharArray();
 
 		Map<Character, Integer> characterMap = new HashMap<Character, Integer>();
@@ -30,12 +38,10 @@ public class PrintDuplicates {
 				word);
 
 		for (Map.Entry<Character, Integer> entry : entrySet) {
-			if (entry.getValue() > 1) {
+			if ((entry.getValue() > 1))  {
 				System.out.printf("%s : %d %n", entry.getKey(),
 						entry.getValue());
 			}
 		}
-		
-
 	}
 }
